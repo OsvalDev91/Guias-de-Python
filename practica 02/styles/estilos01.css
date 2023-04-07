@@ -1,0 +1,149 @@
+/*Estilos ejercicio literal 1*/
+#tabla01 {
+    border-collapse: collapse;
+    background-color: yellow;
+}
+#tabla01-tr {
+    border: 2px solid rgb(117, 117, 117);
+}
+#tabla01-td {
+    border: 2px solid rgb(117, 117, 117);
+}
+
+
+/*Estilos ejercicio literal 2*/
+#body-02{
+    background-color: orange;
+}
+#h1-02{
+    background-color: rgb(229, 255, 0);
+}
+#h2-02{
+    background-color: rgb(255, 255, 255);
+}
+#p-02{
+    background-color: rgb(225, 1, 255);
+}
+
+
+/*Estilos ejercicio literal 3*/
+#h1-03{
+    color: gray;
+}
+#h2-03{
+    color: rgb(39, 111, 170);
+}
+#h3-03{
+    color: rgb(16, 119, 42);
+    font-weight: bolder;
+}
+#p-03{
+    font-weight: bolder;
+}
+
+
+/*Estilos ejercicio literal 4*/
+#h1-04{
+    text-decoration: line-through;
+}
+#h2-04{
+    text-decoration: underline;
+}
+#a-04{
+    text-decoration: none;
+}
+
+
+/*Estilos ejercicio literal 5*/
+#h1-05{
+    text-align: right;
+}
+#h3-05{
+    text-align: center;
+}
+
+
+/*Estilos ejercicio literal 6*/
+#h1-06{
+    font-family: Georgia;
+}
+#h2-06{
+    font-family: Courier;
+    font-weight: bolder;
+}
+#p-06{
+    font-family: Tahoma;
+}
+
+
+/*Estilos ejercicio literal 7*/
+#p1-07{
+    border: 2px dotted;
+}
+#p2-07{
+    border: 2px dashed;
+}
+#p3-07{
+    border: 2px solid;
+}
+#p4-07{
+    border: double;
+}
+#h1-07{
+    border: groove;
+}
+#h2-07{
+    border: ridge;
+}
+#h3-07{
+    border: inset;
+}
+#h4-07{
+    border: outset;
+}
+
+
+/*Estilos ejercicio literal 8*/
+#p1-08{
+    border: groove;
+    padding: 20px;
+}
+#p2-08{
+    border: groove rgb(30, 184, 30);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#p3-08{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 35px;
+}
+
+
+/*Estilos ejercicio literal 9*/
+#table1-09{
+    border-collapse: collapse;
+}
+#tr1-09,#td1-09 {
+    border: groove;
+    padding-right: 194px;
+}
+#table2-09{
+    border-collapse: separate;
+}
+#tr2-09,#td2-09 {
+    border: double;
+    padding-right: 190px;
+}
+#a1-09{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*Estilos ejercicio literal 10*/
+#h1-10{
+    background-color: rgb(190, 183, 201);
+}

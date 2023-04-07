@@ -16,4 +16,4 @@ costo = totalHoras * 1.50
 
 print("")
 print("► Tiempo registrado de estacionamiento es de →",horas,"Horas",minutos,"Minutos")
-print("► Monto a pagar por el estacionamiento es de: $%.2f"%costo)
+print("► Monto a pagar por el tiempo de estacionamiento es de: $%.2f"%costo)

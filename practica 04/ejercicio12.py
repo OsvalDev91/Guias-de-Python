@@ -22,5 +22,6 @@ ivas = {"Manzanas": 0.13, "Peras": 0.13}
 
 # Llamado a la función para obtener el total a pagar
 total = total_a_pagar(cesta, descuentos, ivas)
+total = round(total,2)
 
-print(f"El total a pagar de la cesta es: ${total}")
+print(f"El total a pagar de la cesta es : ${total}")

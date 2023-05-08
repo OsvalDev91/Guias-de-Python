@@ -15,7 +15,7 @@ def total_a_pagar(cesta, descuento, iva):
         total += precio_iva
     return total
 
-# cesta = {"Manzanas": 100, "Plátanos": 50, "Peras": 75}
+
 cesta = {"Manzanas": 10, "Plátanos": 20}
 descuentos = {"Manzanas": 0.10, "Plátanos": 0.10}
 ivas = {"Manzanas": 0.13, "Peras": 0.13}

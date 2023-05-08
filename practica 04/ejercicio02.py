@@ -10,5 +10,5 @@ if exponente >= 0:
 
 elif numero or exponente <0:
     resultado = -(1/numero)**exponente
-    print(numero, "elevado a la", exponente, "es igual a %.2f"% resultado)
+    print(numero, "elevado a la", exponente, "es igual a %.0f"% resultado)
 

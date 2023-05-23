@@ -88,3 +88,18 @@ def resultados(request):
     }
 
     return render(request, 'resultados.html', context)
+
+# Ejercicio lista de usuarios
+from django.shortcuts import render
+
+usuarios = [   
+    {'nombre': 'Juan', 'edad': 25},
+    {'nombre': 'María', 'edad': 30},
+    {'nombre': 'Ana', 'edad': 28},
+]
+
+def lista_usuarios(request):
+    context = {
+        'usuarios': usuarios,
+    }
+    return render(request, 'lista-usuarios.html', context)

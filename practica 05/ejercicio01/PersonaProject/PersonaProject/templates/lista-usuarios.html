@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Usuarios{% endblock %}
+
+{% block content %}
+<h1>Lista de Usuarios:</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{% if usuario.nombre|lower|slice:"0:1" == "a" %}<strong>{{ usuario.nombre }}</strong>{% else %}{{usuario.nombre }}{% endif %}</td>
+            <td>{{ usuario.edad }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

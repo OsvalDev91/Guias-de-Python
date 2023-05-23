@@ -32,24 +32,6 @@ def math(request):
 
     return render(request, 'calc.html')
 
-# def math(request):
-#     if request.method == 'POST':
-#         num1 = int(request.POST.get('num1'))
-#         num2 = int(request.POST.get('num2'))
-#         operacion = request.POST.get('operacion')
-
-#         if operacion == 'sumar':
-#             resultado = num1 + num2
-#         elif operacion == 'restar':
-#             resultado = num1 - num2
-#         elif operacion == 'multiplicar':
-#             resultado = num1 * num2
-#         elif operacion == 'dividir':
-#             resultado = num1 / num2
-
-#         return JsonResponse({'resultado': resultado})
-
-#     return JsonResponse({'error': 'No se recibieron datos válidos'})
 
 # Ejercicio Titulares de noticia.
 titulares = [
@@ -103,3 +85,44 @@ def lista_usuarios(request):
         'usuarios': usuarios,
     }
     return render(request, 'lista-usuarios.html', context)
+
+# Ejercicio GET y POST
+def result(request):
+    if request.method == 'POST':
+        nombre = request.POST.get('nombre', '')
+        physics = request.POST.get('physics', '')
+        chemistry = request.POST.get('chemistry', '')
+        maths = request.POST.get('maths', '')
+
+        context = {
+            'nombre': nombre,
+            'physics': physics,
+            'chemistry': chemistry,
+            'maths': maths,
+        }
+
+        return render(request, 'result.html', context)
+
+    return render(request, 'form.html')
+
+
+
+
+# def math(request):
+#     if request.method == 'POST':
+#         num1 = int(request.POST.get('num1'))
+#         num2 = int(request.POST.get('num2'))
+#         operacion = request.POST.get('operacion')
+
+#         if operacion == 'sumar':
+#             resultado = num1 + num2
+#         elif operacion == 'restar':
+#             resultado = num1 - num2
+#         elif operacion == 'multiplicar':
+#             resultado = num1 * num2
+#         elif operacion == 'dividir':
+#             resultado = num1 / num2
+
+#         return JsonResponse({'resultado': resultado})
+
+#     return JsonResponse({'error': 'No se recibieron datos válidos'})

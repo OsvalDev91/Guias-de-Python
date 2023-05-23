@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultados de la Búsqueda{% endblock %}
+
+{% block content %}
+<h1>Resultados de la Búsqueda:</h1>
+<h2>Palabra clave: {{ palabra_clave }}</h2>
+<ul>
+    {% for titular in titulares_coincidentes %}
+        <li><a href="#">{{ titular }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Búsqueda de Noticias{% endblock %}
+
+{% block content %}
+<h1>Búsqueda de Noticias:</h1>
+<form method="GET" action="{% url 'resultados' %}">
+    <input type="text" name="palabra_clave" placeholder="Palabra clave" required>
+    <br><br>
+    <button type="submit">Buscar</button>
+</form>
+{% endblock %}

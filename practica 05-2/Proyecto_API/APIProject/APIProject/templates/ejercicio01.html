@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Usuarios</title>
+</head>
+<body>
+    <style>
+        table,th,td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                {% for campo in campos %}
+                    <th>{{ campo }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for dato in datos %}
+                <tr>
+                    <td>{{ dato.ID }}</td>
+                    <td>{{ dato.NAME }}</td>
+                    <td>{{ dato.USERNAME }}</td>
+                    <td>{{ dato.EMAIL }}</td>
+                    <td>{{ dato.PHONE }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

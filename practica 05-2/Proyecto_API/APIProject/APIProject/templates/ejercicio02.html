@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" value="{{ post.title }}" readonly><br><br>
+
+        <label for="body">Cuerpo:</label>
+        <textarea id="body" name="body" readonly>{{ post.body }}</textarea><br><br>
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" value="{{ post.id }}" readonly><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
